@@ -60,6 +60,20 @@ report 50102 "vendorlist"
             }
         }
     }
+    trigger OnInitReport()
+    begin
+        Message('init report');
+    end;
+
+    trigger OnPostReport()
+    begin
+        Message('on post report');
+    end;
+
+    trigger OnPreReport()
+    begin
+        Message('on prereport');
+    end;
 
 
     var
