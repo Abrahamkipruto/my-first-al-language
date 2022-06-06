@@ -1,15 +1,16 @@
-page 50104 employee
+page 50110 employeelist
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Documents;
-    SourceTable = Myemployee;
+    SourceTable = myEmployee;
+    Editable = false;
 
     layout
     {
         area(Content)
         {
-            group(employee)
+            repeater(employee)
             {
                 field(Id; Id)
                 {
@@ -48,9 +49,7 @@ page 50104 employee
             }
 
         }
-
     }
 }
-
 
 

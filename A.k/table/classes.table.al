@@ -9,7 +9,7 @@ table 50102 class
         field(1; id; Integer)
         {
             DataClassification = ToBeClassified;
-            Caption = 'interger';
+            Caption = 'ID';
 
         }
         field(2; Name; Text[20])
@@ -21,47 +21,47 @@ table 50102 class
         {
             DataClassification = ToBeClassified;
         }
-        field(4;mode;Option)
+        field(4; mode; Option)
         {
-            OptionMembers="live","on demand";
-            OptionCaption ='live, on demand';
+            OptionMembers = "live","on demand";
+            OptionCaption = 'live, on demand';
         }
-        field(5; "contact";Integer)
+        field(5; "contact"; Integer)
         {
             DataClassification = ToBeClassified;
-            
+
         }
     }
-    
+
     keys
     {
-        key(Pk;ID)
+        key(Pk; ID)
         {
             Clustered = true;
         }
     }
-    
+
     var
         myInt: Integer;
-    
+
     trigger OnInsert()
     begin
-        
+
     end;
-    
+
     trigger OnModify()
     begin
-        
+
     end;
-    
+
     trigger OnDelete()
     begin
-        
+
     end;
-    
+
     trigger OnRename()
     begin
-        
+
     end;
-    
+
 }
