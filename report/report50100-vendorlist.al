@@ -32,6 +32,20 @@ report 50102 "vendorlist"
             {
 
             }
+            trigger OnPreDataItem()
+            begin
+
+            end;
+
+            trigger OnAfterGetRecord()
+            begin
+
+            end;
+
+            trigger OnPostDataItem()
+            begin
+
+            end;
         }
     }
 
@@ -72,7 +86,8 @@ report 50102 "vendorlist"
 
     trigger OnPreReport()
     begin
-        Message('on prereport');
+        compInfo.Get;
+        CompInfo.CalcFields(Picture);
     end;
 
 
