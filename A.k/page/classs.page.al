@@ -11,11 +11,17 @@ page 50105 class
         {
             group(class)
             {
+                // field(No; No)
+                // {
+                //     ApplicationArea = All;
+
+                // }
                 field(id; id)
                 {
                     ApplicationArea = All;
 
                 }
+
                 field(Name; Name)
                 {
                     ApplicationArea = all;
